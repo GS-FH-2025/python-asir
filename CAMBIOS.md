@@ -42,3 +42,13 @@ Importante recalcar que esta rama no existe en github, por lo que debemos de sub
 ```
 git push --set-upstream origin nuevaRama
 ```
+
+Una vez tengamos la funcionalidad completa, cambiaremos a la rama 'main' y trearemos los cambios, ya que esta es el principal que se mostrará:
+
+```
+git checkout main
+git pull
+git merge nuevaRama
+```
+
+Una vez hayamos copiado los nuevos cambios a la rama 'main', tendremos que subirlos para que se vea reflejado
