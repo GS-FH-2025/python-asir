@@ -37,4 +37,8 @@ y accederemos a esta mediante:
 git checkout nuevaRama
 ```
 
-Importante recalcar que esta rama no existe en github, por lo que debemos de subir los cambios para que esta se cree.
+Importante recalcar que esta rama no existe en github, por lo que debemos de subir los cambios para que esta se cree:
+
+```
+git push --set-upstream origin nuevaRama
+```
