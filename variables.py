@@ -58,9 +58,3 @@
 # print(bool(caracter1))
 
 # print( 5 <= 7 )
-
-
-
-
-
-
