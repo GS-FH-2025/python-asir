@@ -119,18 +119,18 @@
 # 30% de la calificación del examen final.
 # 15% de la calificación de un trabajo final.
 
-parcial1= int(input('Nota parcial 1: '))
-parcial2= int(input('Nota parcial 2: '))
-parcial3= int(input('Nota parcial 3: '))
+# parcial1= int(input('Nota parcial 1: '))
+# parcial2= int(input('Nota parcial 2: '))
+# parcial3= int(input('Nota parcial 3: '))
 
-promedio= (parcial1+parcial2+parcial3)/3
+# promedio= (parcial1+parcial2+parcial3)/3
 
-examen= int(input('Nota examen: '))
-trabajo= int(input('Nota trabajo: '))
+# examen= int(input('Nota examen: '))
+# trabajo= int(input('Nota trabajo: '))
 
-nota= promedio*0.55 + examen*0.30 + trabajo*0.15
+# nota= promedio*0.55 + examen*0.30 + trabajo*0.15
 
-print('Tu nota final es de %s' % (nota))
+# print('Tu nota final es de %s' % (nota))
 
 
 
