@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    console.log("Script cargado");
+
+    // Array de puntuaciones
+    let puntuaciones = [
+        { nombre: "Pablo", puntuacion: 180 },
+        { nombre: "Javier", puntuacion: 270 },
+        { nombre: "Raquel", puntuacion: 70 },
+        { nombre: "Mario", puntuacion: 310 },
+        { nombre: "Miriam", puntuacion: 90 },
+        { nombre: "Fernando", puntuacion: 105 },
+        { nombre: "Laura", puntuacion: 210 },
+        { nombre: "Julián", puntuacion: 520 }
+    ];
+
+    // 1) Mostrar cada elemento del array original
+    for (let i = 0; i < puntuaciones.length; i++) {
+        let jugador = puntuaciones[i];
+        console.log(jugador.nombre + " tiene " + jugador.puntuacion + " puntos");
+    }
+
+    // 2) Función que devuelve un NUEVO array con los nombres
+    //    de los jugadores que tienen más de 100 puntos
+    function jugadoresTop(array) {
+        let resultado = [];
+
+        for (let i = 0; i < array.length; i++) {
+            let jugador = array[i];
+
+            if (jugador.puntuacion > 100) {
+                resultado.push(jugador.nombre);
+            }
+        }
+
+        return resultado;
+    }
+
+    // 3) Usar la función y mostrar el nuevo array
+    let tope = jugadoresTop(puntuaciones);
+
+    for (let i = 0; i < tope.length; i++) {
+        console.log("Jugador top: " + tope[i]);
+    }
+</script>
+<body>
+    
+</body>
+</html>
